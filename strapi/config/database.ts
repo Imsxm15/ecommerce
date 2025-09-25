@@ -28,6 +28,7 @@ export default ({ env }) => {
         max: env.int('DATABASE_POOL_MAX', 10),
       },
     },
+
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
@@ -54,6 +55,7 @@ export default ({ env }) => {
         max: env.int('DATABASE_POOL_MAX', 10),
       },
     },
+
     sqlite: {
       connection: {
         filename: path.join(
